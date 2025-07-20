@@ -10,7 +10,7 @@
 
 주요 라이브러리: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 
-사용 데이터: Kaggle - Used Car Price Prediction (사용한 데이터셋의 정확한 링크를 여기에 삽입하세요)
+사용 데이터: Kaggle - Used Car Price Prediction (https://www.kaggle.com/datasets/taeefnajib/used-car-price-prediction-dataset)
 
 3. 프로젝트 파이프라인 (Methodology)
 본 프로젝트는 아래와 같은 체계적인 단계로 진행되었습니다.
