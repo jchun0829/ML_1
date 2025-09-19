@@ -1,5 +1,6 @@
 # ML_1
 중고차 가격 예측 모델 개발
+
 1. 프로젝트 개요 (Overview)
 Kaggle의 중고차 데이터를 활용, 차량 특성 기반 가격 예측 회귀 모델 개발 및 평가.
 
@@ -21,6 +22,8 @@ Kaggle의 중고차 데이터를 활용, 차량 특성 기반 가격 예측 회�
 
 이상치 처리 (핵심 문제 해결 과정):
 
+![가격 이상치 분포](./assets/price_outliers.png)
+
 - 문제 발견: 초기 모델의 예측 오차(RMSE)가 $130,000 이상으로 비정상적으로 높게 나오는 문제점 식별.
 
 - 원인 진단: 가격 데이터 분포 시각화를 통해, 소수의 초고가 차량 데이터(이상치)가 모델 학습을 심각하게 방해하고 있음을 확인.
@@ -38,10 +41,9 @@ Kaggle의 중고차 데이터를 활용, 차량 특성 기반 가격 예측 회�
 
 샘플 평균 가격: 약 $31,401
 
-Model	            RMSE (Root Mean Squared Error)	MAE (Mean Absolute Error)
-Linear Regression	$11,097.75	                    $7,253.72
-Random Forest	    $8,889.17	                    $5,736.28
-Gradient Boosting	$8,766.52	                    $5,993.20
+Model: Linear Regression	RMSE: $11,097.75 / MAE: $7,253.72
+Model: Random Forest	    RMSE: $8,889.17	 / MAE: $5,736.28
+Model: Gradient Boosting	RMSE: $8,766.52	 / MAE: $5,993.20
 
 최종 결론: Random Forest 모델이 가장 낮은 MAE($5,736) 기록. 평균 약 18.3%의 오차율로 가장 현실적인 예측 성능을 보여줌.
 
